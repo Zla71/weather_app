@@ -1,16 +1,20 @@
 from weather_application.class_weather import Weather
 from weather_application import databaseUtilities
+from weather_application import print_messages
 from weather_application import buildingFile
 from weather_application import exportData
 from weather_application import cleaningUp
 from weather_application import timeZones
+from weather_application import logging
 from weather_application import timing
 from datetime import datetime
 
 
 weather_app = Weather()
 
-print("\n------------Console Output------------\n")
+# LOGGING
+logging.write_logging(weather_app, print_messages.console_output)
+print(print_messages.console_output)
 
 # STARTING TIMER
 timing.start_time(weather_app)
@@ -36,6 +40,5 @@ cleaningUp.move_files_to_folder(weather_app, datetime.now())
 timing.calculate_total_time(weather_app)
 
 # LOGGING
-# TODO TODO TODO
-
-print("SUCCESS\n")
+logging.write_logging(weather_app, print_messages.success_message)
+print(print_messages.success_message)

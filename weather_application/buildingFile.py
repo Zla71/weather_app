@@ -1,3 +1,4 @@
+from weather_application import logging
 from requests_html import HTMLSession
 from datetime import datetime
 import pytz, re, time
@@ -6,7 +7,8 @@ import pytz, re, time
 def populate_capitals_information(weather_app_instance, current_time) -> list:
     """Populates the list with information which will be written in the csv file."""
 
-    print(f'\n{current_time.strftime("%H:%M:%S")}h - Start the process of building csv file\n')
+    print(f'\n{current_time.strftime("%H:%M:%S")} - Start the process of building csv file\n')
+    logging.write_logging(weather_app_instance, f'\n{current_time.strftime("%H:%M:%S")} - Start the process of building csv file\n')
 
     list_to_write = []
 
@@ -37,6 +39,7 @@ def populate_capitals_information(weather_app_instance, current_time) -> list:
 
         dict_1 = {"City": current_city, "Temperature": temp, "Date": date, "Time": hour, "Log": weather_app_instance.current_time}
         list_to_write.append(dict_1)
+        
         time.sleep(2)
     
     weather_app_instance.list_to_write = list_to_write
@@ -53,8 +56,12 @@ def building_file(weather_app_instance, current_time) -> None:
         for info in weather_app_instance.list_to_write:
             file.write(f"{info['City']};{info['Temperature']};{info['Date']};{info['Time']};{info['Log']}\n")
 
-    print(f'{current_time.strftime("%H:%M:%S")}h - File is buit')
+    print(f'{current_time.strftime("%H:%M:%S")} - File is buit\n')
     print(f"File name: {weather_app_instance.csv_file_name}")
     print(f"Location: {weather_app_instance.csv_files_location}, mind that it will be moved during the process")
 
+    logging.write_logging(weather_app_instance, f'\n{current_time.strftime("%H:%M:%S")} - File is buit\n\n')
+    logging.write_logging(weather_app_instance, f"File name: {weather_app_instance.csv_file_name}\n")
+    logging.write_logging(weather_app_instance, f"Location: {weather_app_instance.csv_files_location}, mind that it will be moved during the process\n\n")
+    
     time.sleep(5)

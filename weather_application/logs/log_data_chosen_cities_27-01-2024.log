@@ -1,0 +1,132 @@
+
+------------Console Output------------
+
+21:17:57 - Process started
+
+21:17:59 - Information from CSV file created
+
+FINAL CITIES LIST ['Los Angeles', 'Monaco', 'Dubai', 'Alicante', 'Colombo', 'Volos', 'Corfu', 'Zakynthos', 'Lefkada', 'Hurgada', 'Bari', 'Capri', 'Menorka', 'Mayorka', 'Miami', 'Antalya', 'Ponce', 'Anchorage', 'Nayba', 'Lagos', 'Diabugu', 'Santa Cruz de Tenerife', 'Majunga', 'Ipoh', 'Mount Hagen', 'Perth', 'Bulawayo']
+
+21:18:04 - Time zones populated
+
+FINAL MAP TIME ZONES {'Los Angeles': {'Continent': 'America', 'City': 'Los_Angeles'}, 'Monaco': {'Continent': 'Europe', 'City': 'Monaco'}, 'Dubai': {'Continent': 'Asia', 'City': 'Dubai'}, 'Alicante': {'Continent': 'Europe', 'City': 'Madrid'}, 'Colombo': {'Continent': 'Asia', 'City': 'Colombo'}, 'Santa Cruz de Tenerife': {'Continent': 'Europe', 'City': 'Lisbon'}, 'Volos': {'Continent': 'Europe', 'City': 'Athens'}, 'Corfu': {'Continent': 'Europe', 'City': 'Athens'}, 'Zakynthos': {'Continent': 'Europe', 'City': 'Athens'}, 'Lefkada': {'Continent': 'Europe', 'City': 'Athens'}, 'Hurgada': {'Continent': 'Europe', 'City': 'Athens'}, 'Bari': {'Continent': 'Europe', 'City': 'Rome'}, 'Capri': {'Continent': 'Europe', 'City': 'Rome'}, 'Menorka': {'Continent': 'Europe', 'City': 'Rome'}, 'Mayorka': {'Continent': 'Europe', 'City': 'Rome'}, 'Miami': {'Continent': 'America', 'City': 'New_York'}, 'Antalya': {'Continent': 'Europe', 'City': 'Athens'}, 'Ponce': {'Continent': 'America', 'City': 'Caracas'}, 'Anchorage': {'Continent': 'America', 'City': 'Anchorage'}, 'Nayba': {'Continent': 'Asia', 'City': 'Yakutsk'}, 'Lagos': {'Continent': 'Africa', 'City': 'Niamey'}, 'Diabugu': {'Continent': 'Africa', 'City': 'Banjul'}, 'Majunga': {'Continent': 'Europe', 'City': 'Athens'}, 'Ipoh': {'Continent': 'Asia', 'City': 'Kuala_Lumpur'}, 'Mount Hagen': {'Continent': 'Australia', 'City': 'Brisbane'}, 'Perth': {'Continent': 'Australia', 'City': 'Perth'}, 'Bulawayo': {'Continent': 'Africa', 'City': 'Harare'}}
+
+21:18:09 - Start the process of building csv file
+
+21:19:58 - File is buit
+
+File name: temperatures_table_cities_27-01-2024 21h-17m 202401.csv
+Location: D:\Python\packages\weather_application\csv_files, mind that it will be moved during the process
+
+21:20:03 - Connected to database
+Parameters:
+Host: 127:0.0.1
+Port: 3306
+User: root
+Password: *****
+Database: weather_database
+Table: weather_app
+
+21:20:06 - Start loading process data in MySQL
+
+21:20:06 - The data from csv file is loaded in the databse 'weather_database', table 'weather_app'
+
+21:20:11 - Time for clean up, move csv file to current month folder D:\Python\packages\weather_application\csv_files\202401
+
+File 'temperatures_table_cities_27-01-2024 21h-17m 202401.csv' was moved to folder: D:\Python\packages\weather_application\csv_files\202401
+
+21:20:11 - Process finished
+
+The whole process took 02:14 minutes
+
+SUCCESS
+
+--------------------------------------------------------------------------------
+
+------------Console Output------------
+
+21:21:10 - Process started
+
+21:21:12 - Information from CSV file created
+
+FINAL CITIES LIST ['Los Angeles', 'Monaco', 'Dubai', 'Alicante', 'Colombo', 'Volos', 'Corfu', 'Zakynthos', 'Lefkada', 'Hurgada', 'Bari', 'Capri', 'Menorka', 'Mayorka', 'Miami', 'Antalya', 'Ponce', 'Anchorage', 'Nayba', 'Lagos', 'Diabugu', 'Santa Cruz de Tenerife', 'Majunga', 'Ipoh', 'Mount Hagen', 'Perth', 'Bulawayo']
+
+21:21:17 - Time zones populated
+
+FINAL MAP TIME ZONES {'Los Angeles': {'Continent': 'America', 'City': 'Los_Angeles'}, 'Monaco': {'Continent': 'Europe', 'City': 'Monaco'}, 'Dubai': {'Continent': 'Asia', 'City': 'Dubai'}, 'Alicante': {'Continent': 'Europe', 'City': 'Madrid'}, 'Colombo': {'Continent': 'Asia', 'City': 'Colombo'}, 'Santa Cruz de Tenerife': {'Continent': 'Europe', 'City': 'Lisbon'}, 'Volos': {'Continent': 'Europe', 'City': 'Athens'}, 'Corfu': {'Continent': 'Europe', 'City': 'Athens'}, 'Zakynthos': {'Continent': 'Europe', 'City': 'Athens'}, 'Lefkada': {'Continent': 'Europe', 'City': 'Athens'}, 'Hurgada': {'Continent': 'Europe', 'City': 'Athens'}, 'Bari': {'Continent': 'Europe', 'City': 'Rome'}, 'Capri': {'Continent': 'Europe', 'City': 'Rome'}, 'Menorka': {'Continent': 'Europe', 'City': 'Rome'}, 'Mayorka': {'Continent': 'Europe', 'City': 'Rome'}, 'Miami': {'Continent': 'America', 'City': 'New_York'}, 'Antalya': {'Continent': 'Europe', 'City': 'Athens'}, 'Ponce': {'Continent': 'America', 'City': 'Caracas'}, 'Anchorage': {'Continent': 'America', 'City': 'Anchorage'}, 'Nayba': {'Continent': 'Asia', 'City': 'Yakutsk'}, 'Lagos': {'Continent': 'Africa', 'City': 'Niamey'}, 'Diabugu': {'Continent': 'Africa', 'City': 'Banjul'}, 'Majunga': {'Continent': 'Europe', 'City': 'Athens'}, 'Ipoh': {'Continent': 'Asia', 'City': 'Kuala_Lumpur'}, 'Mount Hagen': {'Continent': 'Australia', 'City': 'Brisbane'}, 'Perth': {'Continent': 'Australia', 'City': 'Perth'}, 'Bulawayo': {'Continent': 'Africa', 'City': 'Harare'}}
+
+21:21:22 - Start the process of building csv file
+
+21:23:11 - File is buit
+
+File name: temperatures_table_cities_27-01-2024 21h-21m 202401.csv
+Location: D:\Python\packages\weather_application\csv_files, mind that it will be moved during the process
+
+21:23:16 - Connected to database
+Parameters:
+Host: 127:0.0.1
+Port: 3306
+User: root
+Password: *****
+Database: weather_database
+Table: weather_app
+
+21:23:19 - Start loading process data in MySQL
+
+21:23:19 - The data from csv file is loaded in the databse 'weather_database', table 'weather_app'
+
+21:23:24 - Time for clean up, move csv file to current month folder D:\Python\packages\weather_application\csv_files\202401
+
+File 'temperatures_table_cities_27-01-2024 21h-21m 202401.csv' was moved to folder: D:\Python\packages\weather_application\csv_files\202401
+
+21:23:24 - Process finished
+
+The whole process took 02:14 minutes
+
+SUCCESS
+
+--------------------------------------------------------------------------------
+
+------------Console Output------------
+
+21:37:23 - Process started
+
+21:37:25 - Information from CSV file created
+
+FINAL CITIES LIST ['Los Angeles', 'Monaco', 'Dubai', 'Alicante', 'Colombo', 'Volos', 'Corfu', 'Zakynthos', 'Lefkada', 'Hurgada', 'Bari', 'Capri', 'Menorka', 'Mayorka', 'Miami', 'Antalya', 'Ponce', 'Anchorage', 'Nayba', 'Lagos', 'Diabugu', 'Santa Cruz de Tenerife', 'Majunga', 'Ipoh', 'Mount Hagen', 'Perth', 'Bulawayo']
+
+21:37:30 - Time zones populated
+
+FINAL MAP TIME ZONES {'Los Angeles': {'Continent': 'America', 'City': 'Los_Angeles'}, 'Monaco': {'Continent': 'Europe', 'City': 'Monaco'}, 'Dubai': {'Continent': 'Asia', 'City': 'Dubai'}, 'Alicante': {'Continent': 'Europe', 'City': 'Madrid'}, 'Colombo': {'Continent': 'Asia', 'City': 'Colombo'}, 'Santa Cruz de Tenerife': {'Continent': 'Europe', 'City': 'Lisbon'}, 'Volos': {'Continent': 'Europe', 'City': 'Athens'}, 'Corfu': {'Continent': 'Europe', 'City': 'Athens'}, 'Zakynthos': {'Continent': 'Europe', 'City': 'Athens'}, 'Lefkada': {'Continent': 'Europe', 'City': 'Athens'}, 'Hurgada': {'Continent': 'Europe', 'City': 'Athens'}, 'Bari': {'Continent': 'Europe', 'City': 'Rome'}, 'Capri': {'Continent': 'Europe', 'City': 'Rome'}, 'Menorka': {'Continent': 'Europe', 'City': 'Rome'}, 'Mayorka': {'Continent': 'Europe', 'City': 'Rome'}, 'Miami': {'Continent': 'America', 'City': 'New_York'}, 'Antalya': {'Continent': 'Europe', 'City': 'Athens'}, 'Ponce': {'Continent': 'America', 'City': 'Caracas'}, 'Anchorage': {'Continent': 'America', 'City': 'Anchorage'}, 'Nayba': {'Continent': 'Asia', 'City': 'Yakutsk'}, 'Lagos': {'Continent': 'Africa', 'City': 'Niamey'}, 'Diabugu': {'Continent': 'Africa', 'City': 'Banjul'}, 'Majunga': {'Continent': 'Europe', 'City': 'Athens'}, 'Ipoh': {'Continent': 'Asia', 'City': 'Kuala_Lumpur'}, 'Mount Hagen': {'Continent': 'Australia', 'City': 'Brisbane'}, 'Perth': {'Continent': 'Australia', 'City': 'Perth'}, 'Bulawayo': {'Continent': 'Africa', 'City': 'Harare'}}
+
+21:37:35 - Start the process of building csv file
+
+21:39:19 - File is buit
+
+File name: temperatures_table_cities_27-01-2024 21h-37m 202401.csv
+Location: D:\Python\packages\weather_application\csv_files, mind that it will be moved during the process
+
+21:39:24 - Connected to database
+Parameters:
+Host: 127:0.0.1
+Port: 3306
+User: root
+Password: *****
+Database: weather_database
+Table: weather_app
+
+21:39:27 - Start loading process data in MySQL
+
+21:39:27 - The data from csv file is loaded in the databse 'weather_database', table 'weather_app'
+
+21:39:33 - Time for clean up, move csv file to current month folder D:\Python\packages\weather_application\csv_files\202401
+
+File 'temperatures_table_cities_27-01-2024 21h-37m 202401.csv' was moved to folder: D:\Python\packages\weather_application\csv_files\202401
+
+21:39:33 - Process finished
+
+The whole process took 02:09 minutes
+
+SUCCESS
+
+--------------------------------------------------------------------------------

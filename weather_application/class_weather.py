@@ -20,8 +20,8 @@ class Weather:
         self.csv_files_location = rf"D:\Python\packages\weather_application\csv_files"
         self.csv_file_name = rf"temperatures_table_cities_{self.current_date} {self.time_file_name} {self.year}{self.month}.csv"
         
-        self.__logs_location = rf"D:\Python\packages\weather_application\logs\log_data_chosen_cities_{self.current_date}.log",
-        self.copy_log_location = self.__logs_location
+        self.log_file_path = rf"D:\Python\packages\weather_application\logs\log_data_chosen_cities_{self.current_date}.log"
+        self.copy_log_location = self.log_file_path
 
         # folder with csv files and extentions
         self.general_csv_files_folder = "D:\\Python\\packages\\weather_application\\csv_files"

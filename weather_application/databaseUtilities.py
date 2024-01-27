@@ -1,3 +1,4 @@
+from weather_application import logging
 import mysql.connector as sql
 import pandas as pd
 import time
@@ -13,8 +14,12 @@ def database_connection(weather_app_instance, current_time) -> sql.connection:
                 database = "weather_database",)
     weather_app_instance.mycoursor = weather_app_instance.db.cursor()
 
-    print(f'\n{current_time.strftime("%H:%M:%S")}h - Connected to database\n')
+    print(f'\n{current_time.strftime("%H:%M:%S")} - Connected to database\n')
     print(f"Parameters:\nHost: 127:0.0.1\nPort: 3306\nUser: root\nPassword: *****\nDatabase: weather_database\nTable: weather_app")
+
+    logging.write_logging(weather_app_instance, f'{current_time.strftime("%H:%M:%S")} - Connected to database\n')
+    logging.write_logging(weather_app_instance, f"Parameters:\nHost: 127:0.0.1\nPort: 3306\nUser: root\nPassword: *****\nDatabase: weather_database\nTable: weather_app\n\n")
+
     time.sleep(3)
 
     return weather_app_instance.db
@@ -22,7 +27,9 @@ def database_connection(weather_app_instance, current_time) -> sql.connection:
 def load_data_in_sql(weather_app_instance, current_time) -> None:
     """Loads the created csv file into the database"""
 
-    print(f"\n{current_time.strftime('%H:%M:%S')}h - Start loading process data in MySQL")
+    print(f"\n{current_time.strftime('%H:%M:%S')} - Start loading process data in MySQL")
+
+    logging.write_logging(weather_app_instance, f"{current_time.strftime('%H:%M:%S')} - Start loading process data in MySQL\n")
 
     time.sleep(5)
 
@@ -44,7 +51,9 @@ def load_data_in_sql(weather_app_instance, current_time) -> None:
                 weather_app_instance.mycoursor.execute(weather_app_instance.sql_query, val)
                 weather_app_instance.db.commit()
 
-    print(f"\n{current_time.strftime('%H:%M:%S')}h - The data from csv file is loaded in the databse 'weather_database', table 'weather_app'")
+    print(f"\n{current_time.strftime('%H:%M:%S')} - The data from csv file is loaded in the databse 'weather_database', table 'weather_app'")
+    
+    logging.write_logging(weather_app_instance, f"\n{current_time.strftime('%H:%M:%S')} - The data from csv file is loaded in the databse 'weather_database', table 'weather_app'")
 
 # not used
 def execute_query(weather_app_instance) -> None:
